@@ -1,0 +1,26 @@
+.titulo{
+    text-align: center;
+    background-color: aquamarine;
+    margin: 1%;
+    padding: 1%;
+}
+
+footer{
+    background-color: #db3434;
+    padding: 20px;
+}
+
+.piePagina{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.izq, .der{
+    width: 45%;
+}
+
+p{
+    margin: 5px, 0;
+}
