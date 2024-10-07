@@ -35,7 +35,7 @@ switch(true){
     case edad < 18:
         console.log("Eres menor de edad.");
         break;
-    case edad > 18 && edad <= 30:
+    case edad >= 18 && edad <= 30:
         console.log("Eres muy joven.");
         break;
     case edad > 30 && edad <= 60:

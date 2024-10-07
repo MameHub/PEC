@@ -17,30 +17,42 @@ mediante la función alert() y se volverá a pedir otra opción.
 */
 
 // Variables.
-let option, altura, base, n1, n2;
-
-option = prompt("Intorduzca una opción:\n1.- Área de triángulo.\n2.- Área de rectángulo.\n3.- Media aritmética de dos números.\n4.- Salir.")
+let option, result, x, y;
 
 // Menú.
 do{
-switch(option){
-    case 1:
+    
+option = parseInt(prompt("Intorduzca una opción:\n1.- Área de triángulo.\n2.- Área de rectángulo.\n3.- Media aritmética de dos números.\n4.- Salir."));
 
-        console.log("")
-        break;
-    case 2:
+    switch(option){
+        case 1:
+            x = parseFloat(prompt("Introruzca la altura: "));
+            y = parseFloat(prompt("Introruzca la base: "));
+            result = (x * y) / 2;
+            console.log(`El área del triángulo de altura ${x} y de base ${y} es de ${result}`);
+            alert(`El área del triángulo de altura ${x} y de base ${y} es de ${result}`);
+            break;
+        case 2:
+            x = parseFloat(prompt("Introduzca el largo: "));
+            y = parseFloat(prompt("Introduzca el ancho: "));
+            result = x * y;
+            console.log(`El área del rectangulo con ${x} de largo y ${y} de anchura es de ${result}`);
+            alert(`El área del rectangulo con ${x} de largo y ${y} de anchura es de ${result}`);
+            break;
+        case 3:
+            x = parseFloat(prompt("Introduzca el primer número: "));
+            y = parseFloat(prompt("Introduzca el segundo número: "));
+            result = (x + y) / 2;
+            console.log(`La media aritmética de ${x} y ${y} es de ${result}`);
+            alert(`La media aritmética de ${x} y ${y} es de ${result}`);
+            break;
+        case 4:
+            console.log("Fin.")
+            break;
+        default:
+            alert("La opción introducida no es válida.");
+            console.log("La opción introducida no es válida.")
+            break
+    }
 
-        console.log("")
-        break;
-    case 3:
-
-        console.log("")
-        break;
-    case 4:
-        console.log("Fin.")
-        break;
-    default:
-        console.log("La opción introducida no es válida.")
-        break
-}
 } while(option != 4);
