@@ -1,13 +1,27 @@
-// Variables.
+// Variables
+// let intervalo = 10;
+let intervalo;
+let segundos = 0;
 let frase = "";
+let palabras = 0;
+let ventana;
 
-frase = prompt("Introduzca una frase: ");
-if(charCodeAt(32) > 1) {
-    alert("El texto introducido tiene más de un espacio.");
-} else {
-    alert(`La frase introducida es la siguiente: ${frase}`);
+// 
+// ventana = window.open("","","width=500, height=500");
+
+// 
+intervalo = setInterval(obtenerSegundos, 1000);
+function obtenerSegundos() {
+    segundos++;
+    // segundos = new Date();
+    // ventana.document.body.innerHTML = segundos.getSeconds();
+    ventana.document.body.innerHTML = segundos;
 }
 
-function ventanaResultad(frase) {
-    
+function cerrarVentana() {
+    // if(ventana != undefined && ventana!=window.close) {
+        if(segundos === 10) {
+            ventana = window.close();
+        }
+    // }
 }

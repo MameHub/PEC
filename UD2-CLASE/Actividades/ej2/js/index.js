@@ -7,14 +7,14 @@ window.name("Ventana secundaria");
 // 
 function abrirVentana(){
     ventanaNueva = window.open("","","width=200, height=200");
-    ventanaNueva.document.write(`La ventana es de ${ventanaNueva.innerWidth}x${ventanaNueva.innerHeight}`);
+    ventanaNueva.document.body.innerHTML = `Ventana redimensionada a ${ventanaNueva.innerWidth}x${ventanaNueva.innerHeight}`;
     ventanaNueva.focus();
 };
 
 // 
 function redimensionarVentana(){
-    ventanaNueva.resizeBy(600,600); // resizeBy() escala la ventana [suma o resta el tamaño introducido por parámetro], para esto usar resizeTo().
-    ventanaNueva.document.write(`Ventana redimensionada a ${ventanaNueva.innerWidth}x${ventanaNueva.innerHeight}`);
+    ventanaNueva.resizeTo(600,600); // resizeBy() escala la ventana [suma o resta el tamaño introducido por parámetro], para esto usar resizeTo().
+    ventanaNueva.document.body.innerHTML = `Ventana redimensionada a ${ventanaNueva.innerWidth}x${ventanaNueva.innerHeight}`;
 };
 
 // 

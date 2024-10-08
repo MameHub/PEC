@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas examen UD1 y 2</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Contador de palabras</h1>
+    </div>
+    <div class="enunciado">
+        <p>
+            Realizar un script en un fichero externo que permita introducir una frase mediante prompt y muestre en una ventana secundaria las palabras que componen la frase y el número de palabras. Para ello se tendrá en cuenta:
+            <ul>
+                <li>
+                    Introducir frase o palabras mediante el método prompt. Puede contener letras minúsculas y mayúsculas sin acentuar y espacios en blanco. Consideraremos que hay un único espacio en blanco entre palabras. Se controlará mediante bucle en caso de que no sea correcto se mostrará mensaje de error y volverá a pedirla.
+                </li>
+                <li>
+                    Si se pulsa el botón cancelar del prompt o se introduce una cadena de texto vacía, el script acabará sin hacer ninguna operación. Se avisará por consola qeu se ha terminado la ejecución.
+                </li>
+                <li>
+                    Para la comprobación de letras y espacios en blanco se utilizará el código ASCII. El código ASCII de las letras minúsculas(a-z) es: 97-122, de las letras mayúsculas (A-Z) es: 65-90 y del espacio en blanco el 32.
+                </li>
+                <li>
+                    El resultado de las entradas se mostrará en una ventana secundaria, que tendrá estas características:
+                    <ul>
+                        <li>
+                            La ventana tendrá unas dimensiones de alto y ancho que se generará de forma aleatoria. Será un rango entre 400px y 500px.
+                        </li>
+                        <li>
+                            Procesar las palabras que hay en la frase introducida y mostrar los resultados de las palabras en la ventana secundaria.
+                        </li>
+                        <li>
+                            Añadir un contador en la ventana secundaria que se actualice cada segundo utilizando setInterval, con la opción de detener el contador.
+                            Además, la ventana se cerrará automáticamente tras 10 segundos si el usuario no la cierra manualmente.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    La ventana principal tendrá un botón cerrar: cerrará la ventana secundaria.
+                </li>
+            </ul>
+        </p>
+    </div>
+    <div class="consideraciones">
+        <h2>Consideraciones generales a tener en cuenta:</h2>
+    </div>
+    <div class="listaConsideraciones">
+        <ul>
+            <li>No se utilizarán arrays. Se utilizará charAt().</li>
+            <li>Se comentará el código.</li>
+            <li>El uso inadecuado del código se penalizará.</li>
+            <li>Controla las acciones inadecuadas por parte del usuario: cerrar ventana cuando no hay ventana abierta.</li>
+            <li>Mostrar errores cuando el usuario los cometa.</li>
+        </ul>
+    </div>
+    <div class="piePagina">
+        <footer>
+            <p>Tarea realizada por: <b>Álvaro Cañas González</b></p>
+            <p>Programación entorno cliente</p>
+            <p>Desarrollo aplicaciones web</p>
+            <p>I.E.S. Gran Capitán</p>
+        </footer>
+    </div>
+</body>
+</html>
