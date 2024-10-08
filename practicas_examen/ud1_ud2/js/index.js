@@ -1,27 +1,36 @@
 // Variables
 // let intervalo = 10;
 let intervalo;
-let segundos = 0;
+let segundos = 10;
 let frase = "";
 let palabras = 0;
 let ventana;
 
-// 
-// ventana = window.open("","","width=500, height=500");
+// Le pedimos al usuario que introduzca una frase, esta no podrá tener simbolos ni mas de un espacio entre palabras.
+frase = prompt("Introduzca una frase.");
 
-// 
-intervalo = setInterval(obtenerSegundos, 1000);
-function obtenerSegundos() {
-    segundos++;
-    // segundos = new Date();
-    // ventana.document.body.innerHTML = segundos.getSeconds();
-    ventana.document.body.innerHTML = segundos;
+// Creamos la ventana que contendra la información.
+ventana = window.open("","","width=500, height=500");
+
+// Creamos una función para contar las letras de la frase introducida.
+function contarPalabras() {
+
 }
 
+// Creamos un intervalo que vaya segundo a segundo en la función "obtenerSegundos()".
+intervalo = setInterval(obtenerSegundos, 1000);
+// Creamos una función para obtener los segundos que se mantiene la ventana abierta y los mostramos, una vez que llegue a diez cerramos la ventana, llamando a dicha función.
+function obtenerSegundos() {
+    segundos--;
+    ventana.document.body.innerHTML = segundos;
+    if (segundos === 0) {
+        cerrarVentana();
+    }
+}
+
+// Creamos una función para cerrar la ventana en caso de que siga abierta.
 function cerrarVentana() {
-    // if(ventana != undefined && ventana!=window.close) {
-        if(segundos === 10) {
-            ventana = window.close();
-        }
-    // }
+    if(ventana != undefined && !ventana.close()) {
+        ventana.close();
+    }
 }
