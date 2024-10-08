@@ -1,8 +1,8 @@
 .titulo{
     text-align: center;
     background-color: aquamarine;
-    margin: 1%;
-    padding: 1%;
+    margin: 20px;
+    padding: 20px;
 }
 
 footer{
@@ -22,5 +22,5 @@ footer{
 }
 
 p{
-    margin: 5px, 0;
+    margin: 20px, 0;
 }

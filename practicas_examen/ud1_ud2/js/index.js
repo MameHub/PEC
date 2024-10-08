@@ -7,3 +7,7 @@ if(charCodeAt(32) > 1) {
 } else {
     alert(`La frase introducida es la siguiente: ${frase}`);
 }
+
+function ventanaResultad(frase) {
+    
+}
