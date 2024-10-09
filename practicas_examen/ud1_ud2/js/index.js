@@ -11,10 +11,13 @@ frase = prompt("Introduzca una frase.");
 
 // Creamos la ventana que contendra la información.
 ventana = window.open("","","width=500, height=500");
+ventana.document.body.innerHTML = frase;
 
 // Creamos una función para contar las letras de la frase introducida.
 function contarPalabras() {
-
+    palabras = texto.split(' ');
+    palabras.length();
+    ventana.document.body.innerHTML = palabras;
 }
 
 // Creamos un intervalo que vaya segundo a segundo en la función "obtenerSegundos()".
@@ -22,7 +25,7 @@ intervalo = setInterval(obtenerSegundos, 1000);
 // Creamos una función para obtener los segundos que se mantiene la ventana abierta y los mostramos, una vez que llegue a diez cerramos la ventana, llamando a dicha función.
 function obtenerSegundos() {
     segundos--;
-    ventana.document.body.innerHTML = segundos;
+    ventana.document.body.innerHTML = + segundos;
     if (segundos === 0) {
         cerrarVentana();
     }
