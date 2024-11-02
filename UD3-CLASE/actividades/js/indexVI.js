@@ -12,14 +12,16 @@ const numeros = [2, 4, 6, 8, 10];
 console.log(numeros);
 
 console.log();
-console.log("Creamos un nuevo array con el triple de cada número mediante el método map()");
+console.log("Creamos un nuevo array con el triple de cada número mediante el método map():");
 
-
-
-console.log();
-console.log("");
-
-
+const triple = numeros.map(nums => console.log(Math.pow(nums,3)));
 
 console.log();
-console.log("");
+console.log("Creamos un array con índice:");
+
+const indice = numeros.map((nums, indice) => console.log((indice + 1) + ".-" + nums));
+
+console.log();
+console.log("Añadimos un prefijo a cada valor del array:");
+
+const prefijo = numeros.map((nums) => console.log("Número: " + nums));
