@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Partido - Validación con Estilo</title>
+    <script type="module" src="./js/index.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('./tennis_court.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            padding: 25px 35px;
+            width: 450px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffdd00;
+            font-size: 26px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            flex: 1;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="text"] {
+            flex: 2;
+            margin-right: 10px;
+        }
+
+        input[type="number"] {
+            flex: 1;
+        }
+
+        .error {
+            border: 2px solid #dc3545;
+            background-color: #ffe6e6;
+        }
+
+        #mensajeError {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #ffdd00;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        input[type="reset"] {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <form id="partidoForm" novalidate>
+        <h1>Registro Partido de Tenis</h1>
+
+        <!-- Jugador 1 -->
+        <div class="row">
+            <label for="nombreJugador1">Jugador 1:</label>
+            <input type="text" id="nombreJugador1">
+            <input type="number" id="edadJugador1">
+        </div>
+
+        <!-- Jugador 2 -->
+        <div class="row">
+            <label for="nombreJugador2">Jugador 2:</label>
+            <input type="text" id="nombreJugador2">
+            <input type="number" id="edadJugador2">
+        </div>
+
+        <!-- Sets -->
+        <div class="row">
+            <label for="set1">Set 1:</label>
+            <input type="text" id="set1">
+        </div>
+        <div class="row">
+            <label for="set2">Set 2:</label>
+            <input type="text" id="set2">
+        </div>
+        <div class="row">
+            <label for="set3">Set 3:</label>
+            <input type="text" id="set3">
+        </div>
+
+        <p id="mensajeError"></p>
+        <div style="display: flex; justify-content: space-between;">
+            <input type="submit" value="Registrar Partido">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+</body>
+</html>
