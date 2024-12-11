@@ -1,5 +1,5 @@
 /**
- * 
+ * Clase partido donde se almacenan los datos de los jugadores, estos son sus nombres y edad.
  */
 class Jugador {
 

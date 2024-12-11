@@ -1,18 +1,18 @@
 /**
- *
+ * Clase Partido donde se almacenan datos de los jugadores y los sets.
  */
 class Partido {
 
     #jugadores;
-    #Sets;
+    #sets;
 
     constructor(jugadores, sets) {
         this.#jugadores = jugadores;
-        this.#Sets = sets;
+        this.#sets = sets;
     }
 
     toStrig() {
-        return ``;
+        return `El partido se debate entre ${this.#jugadores} y va ${this.#sets}`;
     }
 
     get jugadores() {
@@ -20,19 +20,18 @@ class Partido {
     }
 
     get sets() {
-        return this.#Sets;
+        return this.#sets;
     }
 
-    set jugador(jugador) {
-        if (condition) {
-            
-        }
+    set jugadores(jugadores) {
+        if (Array(jugadores.lenght()) == 2) {
+            this.#jugadores = jugadores;
+        } else
+            return "Tiene que introducir a los dos jugadores.";
     }
 
     set sets(sets) {
-        if (condition) {
-            
-        }
+        this.#sets = sets
     }
 
 }
