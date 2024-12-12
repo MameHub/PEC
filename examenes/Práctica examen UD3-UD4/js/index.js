@@ -5,12 +5,15 @@
 // Función para validar todos los campos del formulario
 function checkValidity() {
     valid = false;
-    nameJ1 = document.formulario.name1;
-    ageJ1 = document.formulario.age1;
-    nameJ2 = document.formulario.name2;
-    ageJ2 = document.formulario.age2;
-    set1 = document.formulario.set1;
-    set2 = document.formulario.set2;
-    set3 = document.formulario.set3;
+    // Jugador
+    let nameJ1 = document.getElementById("name1");
+    let ageJ1 = document.getElementById("age1");
+    let nameJ2 = document.getElementById("name2");
+    let ageJ2 = document.getElementById("age2");
+    // Sets
+    let set1 = document.getElementById("set1");
+    let set2 = document.getElementById("set2");
+    let set3 = document.getElementById("set3");
+    
 }
 
