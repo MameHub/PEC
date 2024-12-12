@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipo de Pokémon</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="./js/index.js" defer></script>
+    <!-- Estilo -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="pokemonForm">
+            <h1>Equipo de Pokémon</h1>
+            <div class="row">
+                <label for="entrenador">Entrenador del equipo:</label>
+                <input type="text" id="entrenador" placeholder="Escribe tu nombre">
+            </div>
+            <div class="row">
+                <label>Selecciona un Pokémon:</label>
+                <div class="pokemon-grid" id="pokemonGrid">
+                    <img src="./images/pikachu.jpg" alt="Pikachu" id="pikachu" data-nombre="Pikachu">
+                    <img src="./images/charmander.jpg" alt="Charmander" id="charmander" data-nombre="Charmander">
+                    <img src="./images/bulbasaur.jpg" alt="Bulbasaur" id="bulbasaur" data-nombre="Bulbasaur">
+                    <img src="./images/squirtle.jpg" alt="Squirtle" id="squirtle" data-nombre="Squirtle">
+                </div>
+            </div>
+            <div class="row types">
+                <input type="radio" id="agua" name="tipo" value="Agua">
+                <label for="agua">Agua</label>
+                <input type="radio" id="fuego" name="tipo" value="Fuego">
+                <label for="fuego">Fuego</label>
+                <input type="radio" id="planta" name="tipo" value="Planta">
+                <label for="planta">Planta</label>
+                <input type="radio" id="electrico" name="tipo" value="Eléctrico">
+                <label for="electrico">Eléctrico</label>
+            </div>
+            <button type="button" id="addPokemon">Añadir Pokémon</button>
+            <div class="row">
+                <p id="mensajeError" class="error"></p>
+            </div>
+            <input type="submit" value="Enviar Equipo">
+        </form>
+    </div>
+</body>
+</html>
