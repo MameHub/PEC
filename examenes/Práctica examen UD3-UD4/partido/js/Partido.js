@@ -7,8 +7,8 @@ class Partido {
     #sets;
 
     constructor(jugadores, sets) {
-        this.#jugadores = jugadores;
-        this.#sets = sets;
+        this.jugadores = jugadores;
+        this.sets = sets;
     }
 
     toStrig() {
@@ -24,14 +24,16 @@ class Partido {
     }
 
     set jugadores(jugadores) {
-        if (Array(jugadores.lenght()) == 2) {
+        if (Array.isArray(jugadores) && jugadores.lenght() == 2) {
             this.#jugadores = jugadores;
         } else
             return "Tiene que introducir a los dos jugadores.";
     }
 
     set sets(sets) {
-        this.#sets = sets
+        if (Array.isArray(sets)) {
+            this.#sets = sets
+        }
     }
 
 }
