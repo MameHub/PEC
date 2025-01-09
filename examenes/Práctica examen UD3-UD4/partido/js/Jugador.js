@@ -7,8 +7,8 @@ class Jugador {
     #edad;
 
     constructor(nombre, edad) {
-        this.#nombre = nombre;
-        this.#edad = edad;
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
     toString() {
@@ -24,14 +24,14 @@ class Jugador {
     }
 
     set nombre(nombre) {
-        if (String(nombre.lenght()) <= 3 && String(nombre.lenght()) >= 50) {
+        if (typeof nombre === "string" && nombre.lenght() <= 3 && nombre.lenght() >= 50) {
             this.#nombre = nombre;            
         } else
             return "El nombre introducido del jugador debe de tener una longitud entre 3 y 50 caracteres.";
     }
 
     set edad(edad) {
-        if (edad > 10 && edad < 60) {
+        if (typeof nombre === "number" && edad > 10 && edad < 60) {
             this.#edad = edad;
         } else
             return "El jugador debe de tener una edad de entre 10 y 60 años.";
