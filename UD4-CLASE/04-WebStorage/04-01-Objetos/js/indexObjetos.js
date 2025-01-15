@@ -1,0 +1,1 @@
+//Definimos un objeto en JavaSript
