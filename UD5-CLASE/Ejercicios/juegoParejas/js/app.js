@@ -1,3 +1,6 @@
+
+
+
 //Verificamos si las dos caras seleccionadas son la misma
 const verificarPareja = () => {
     let valor1 = primeraCarta.getAttribute("data-valor");
