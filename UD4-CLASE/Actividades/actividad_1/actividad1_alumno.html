@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Reserva</title>
+    <script src="./js/actividad1.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <form action="procesar_registro.php" method="post" id="formRegistro">
+        <h1>Registro Reserva</h1>
+        <table>
+            <tr>
+                <td><label for="nombreCompleto">Nombre Completo:</label></td>
+                <td>
+                    <input type="text" name="nombreCompleto" id="nombreCompleto">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Correo Electrónico:</label></td>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Número de Teléfono:</label></td>
+                <td>
+                    <input type="tel" name="telefono" id="telefono">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fechaEvento">Fecha del Evento:</label></td>
+                <td>
+                    <input type="date" name="fechaEvento" id="fechaEvento">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="horaEvento">Hora del Evento:</label></td>
+                <td>
+                    <input type="time" name="horaEvento" id="horaEvento">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="asistentes">Número de Asistentes:</label></td>
+                <td>
+                    <input type="number" name="asistentes" id="asistentes">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comentarios">Comentarios:</label></td>
+                <td>
+                    <textarea name="comentarios" id="comentarios"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div id="mensajeError"></div>
+        <div style="text-align: center;">
+            <input type="submit" value="Enviar" id="enviar">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+</body>
+</html>
