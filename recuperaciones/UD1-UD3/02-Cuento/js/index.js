@@ -11,7 +11,7 @@ try {
     const personaje1 = new Personaje("Mamev0", "Clavate", 27);
     const personaje2 = new Personaje("Yisus", "Lilty", 29);
     const personaje3 = new Personaje("Naza", "Selki", 16);
-    const personaje4 = new Personaje("Paulinha", "Yuko", 3);
+    const personaje4 = new Personaje("Paulinha", "Yuko", 1);
 
     // 3 Protagonistas
 
