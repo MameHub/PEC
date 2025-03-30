@@ -8,7 +8,7 @@ export class Participante {
         this.#nombre = nombre; //esta llamada es al método SET no al atrbuto
         this.#edad = edad;
     }
-    ç
+    
     get nombre() {
         return this.#nombre;
     }
