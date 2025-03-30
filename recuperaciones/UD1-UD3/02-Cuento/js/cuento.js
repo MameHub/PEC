@@ -52,6 +52,18 @@ export class Cuento {
 
     }
 
+    introducirEscenario(escenario) {
+        
+    }
+
+    eliminarEscenario(escenario) {
+
+    }
+
+    annadirPersonaje() {
+        
+    }
+
     // Obtenemos una cadena de texto con la información del objeto creado.
     toString() {
         return `Título: ${this.titulo}, Autor: ${this.autor}, Moraleja: ${this.moraleja}, Descripción ${this.descripcion}`;
