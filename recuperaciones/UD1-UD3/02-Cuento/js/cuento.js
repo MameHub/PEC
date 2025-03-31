@@ -77,6 +77,7 @@ export class Cuento {
                 return false;
             }
         }
+        this.#aEscenarios.push(escenario);
         return true;
     }
 
