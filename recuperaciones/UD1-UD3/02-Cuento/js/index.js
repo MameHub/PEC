@@ -19,8 +19,8 @@ try {
     const protagonista3 = new Protagonista("Naza", "Selki", 16, "alto rendimiento");
 
     // 2 Escenarios
-    const escenario1 = new Escenario("", "", "");
-    const escenario2 = new Escenario("", "", "");
+    const escenario1 = new Escenario("Tierras del reino", "Selva", "Tropical");
+    const escenario2 = new Escenario("Ágrabah", "Orilla del río", "Árido");
 
     // Cuento
     const cuento1 = new Cuento();
