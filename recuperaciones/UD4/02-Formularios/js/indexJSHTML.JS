@@ -15,7 +15,9 @@ function validarNombre() {
             alert("El campo nombre tiene que tener algo");
         }
         if (elemento.validity.patternMismatch) {
-            alert("El nombre debe tener ");
+            alert("El nombre debe tener 2 a 15 caracteres.");
         }
+        return false;
     }
+    return true;
 }
