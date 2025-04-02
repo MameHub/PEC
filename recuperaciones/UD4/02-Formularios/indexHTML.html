@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación formularios con HTML</title>
+</head>
+<body>
+    <form action="procesar.php" method="post" id="miFormuario">
+        <table>
+            <tr>
+                <td>Nombre*: </td>
+                <td>
+                    <!-- Patter, de la A a la Z, de la a a la z y espacios, mínimo 2 y máximo 15 -->
+                    <input type="text" name="nombre" id="nombre" maxlength="15" pattern="[A-za-z ]{2,15}" title="Introduce entre 2 y 15 letras" required/>
+                <td>Edad*: </td>
+                <td>
+                    <input type="number" name="edad" id="edad" min="18" max="100" required/>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <input type="submit" value="Enviar" id="enviar">
+        </p>
+    </form>
+</body>
+</html>
