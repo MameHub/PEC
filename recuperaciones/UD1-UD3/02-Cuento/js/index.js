@@ -38,7 +38,6 @@ try {
     // Mostramos la información completa del cuento.
     console.log(cuento1.toString());
 
-
 } catch (error) {
     console.error("Error: ",error);
 }
