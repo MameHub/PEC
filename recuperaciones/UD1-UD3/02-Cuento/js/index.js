@@ -23,7 +23,17 @@ try {
     const escenario2 = new Escenario("Ágrabah", "Orilla del río", "Árido");
 
     // Cuento
-    const cuento1 = new Cuento();
+    const cuento1 = new Cuento("Las aventuras del IL", "Er Paco", "Aventuras vividas por estudiantes de una academia", "Se aventuran sobre unas extrañas tierras [...]");
+    // 
+    cuento1.introducirEscenario(escenario1);
+    cuento1.introducirEscenario(escenario2);
+    cuento1.annadirPersonaje(personaje1);
+    cuento1.annadirPersonaje(personaje2);
+    cuento1.annadirPersonaje(personaje3);
+    cuento1.annadirPersonaje(personaje4);
+    cuento1.annadirPersonaje(protagonista1);
+    cuento1.annadirPersonaje(protagonista2);
+    cuento1.annadirPersonaje(protagonista3);
 
     // Mostramos la información completa del cuento.
     console.log(cuento1.toString());

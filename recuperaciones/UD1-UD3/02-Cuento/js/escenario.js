@@ -44,7 +44,7 @@ export class Escenario {
 
 //Describe el clima, almacenado con la primera letra en mayúscula y el resto en minúsculas.
     set clima(clima) {
-        this.#clima = clima.charAt(0) + clima;
+        this.#clima = clima.charAt(0).toUpperCase() + clima.toLowerCase();
     }
 
     // Obtenemos una cadena de texto con la información del objeto creado.

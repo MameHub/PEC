@@ -48,7 +48,6 @@ function validarEdad() {
             // alert("El valor debe ser mayor de 17");
             // error(elemento);
             error2(elemento, "El valor debe ser mayor de 17");
-            // no funciona
         }
         return false;
     }

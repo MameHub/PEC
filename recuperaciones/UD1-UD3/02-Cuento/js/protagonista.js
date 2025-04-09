@@ -19,7 +19,12 @@ export class Protagonista extends Personaje {
     }
 
     set cualidad(cualidad) {
-        // furia, frenesi, altoRendimiento, kimura
+        cualidades = ["furia", "frenesi", "alto rendimiento", "kimura"];
+        if (!cualidades.include(cualidad)) {
+            throw new Error("La cualidad introducida no es válida.");
+        } else {
+            this.#cualidad = cualidad;
+        }
     }
 
     // Obtenemos una cadena de texto con la información del objeto creado.
