@@ -40,7 +40,7 @@ export class Cuento {
     }
 
     set autor(autor) {
-        if (condition) {
+        if (autor = "") {
             throw new Error("Debe de introducir un nombre para el autor.");
         } else {
             this.#autor = autor;
@@ -101,7 +101,7 @@ export class Cuento {
 
     // Obtenemos una cadena de texto con la información del objeto creado.
     toString() {
-        return `Título: ${this.titulo}, Autor: ${this.autor}, Moraleja: ${this.moraleja}, Descripción ${this.descripcion}`;
+        return `Título: ${this.titulo}, Autor: ${this.autor}, Moraleja: ${this.moraleja}, Descripción: ${this.descripcion}`;
     }
 
 }

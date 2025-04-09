@@ -19,8 +19,8 @@ export class Protagonista extends Personaje {
     }
 
     set cualidad(cualidad) {
-        cualidades = ["furia", "frenesi", "alto rendimiento", "kimura"];
-        if (!cualidades.include(cualidad)) {
+        const cualidades = ["furia", "frenesi", "alto rendimiento", "kimura"];
+        if (!cualidades.includes(cualidad)) {
             throw new Error("La cualidad introducida no es válida.");
         } else {
             this.#cualidad = cualidad;
