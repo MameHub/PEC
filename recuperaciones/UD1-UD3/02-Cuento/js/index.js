@@ -24,7 +24,7 @@ try {
 
     // Cuento
     const cuento1 = new Cuento("Las aventuras del IL", "Er Paco", "Aventuras vividas por estudiantes de una academia", "Se aventuran sobre unas extrañas tierras [...]");
-    // 
+    // Introducimos escenarios y personajes mediante los métodos de la clase "cuento".
     cuento1.introducirEscenario(escenario1);
     cuento1.introducirEscenario(escenario2);
     cuento1.annadirPersonaje(personaje1);

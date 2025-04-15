@@ -31,6 +31,25 @@ try {
     festival1.introducirProduccion(produccion1);
     festival1.introducirProduccion(produccion2);
 
+    // Mostramos por el documento HTML toda la información del festival.
+    document.getElementById("festival-info").innerHTML += festival1;
+    document.getElementById("festival-info").innerHTML += "</br>"
+    document.getElementById("festival-info").innerHTML += participante1;
+    document.getElementById("festival-info").innerHTML += "</br>"
+    document.getElementById("festival-info").innerHTML += participante2;
+    document.getElementById("festival-info").innerHTML += "</br>"
+    document.getElementById("festival-info").innerHTML += participante3;
+    document.getElementById("festival-info").innerHTML += "</br>"
+    document.getElementById("festival-info").innerHTML += jurado1;
+    document.getElementById("festival-info").innerHTML += "</br>"
+    document.getElementById("festival-info").innerHTML += jurado2;
+    document.getElementById("festival-info").innerHTML += "</br>"
+    document.getElementById("festival-info").innerHTML += jurado3;
+    document.getElementById("festival-info").innerHTML += "</br>"
+    document.getElementById("festival-info").innerHTML += produccion1;
+    document.getElementById("festival-info").innerHTML += "</br>"
+    document.getElementById("festival-info").innerHTML += produccion2;
+
     console.log(festival1.toString());
 
 }catch(error) {
