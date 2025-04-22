@@ -2,7 +2,6 @@ export class Participante {
 
     // Atributos privados
     #nombre;
-    #tipo;
     #edad;
 
     // Constructor

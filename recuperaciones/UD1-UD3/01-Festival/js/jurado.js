@@ -1,4 +1,4 @@
-import { Participante } from "./participante";
+import { Participante } from "./participante.js";
 
 export class Jurado extends Participante {
 

@@ -40,11 +40,7 @@ export class Produccion {
     }
 
     set genero(genero) {
-        if (condition) {
-            
-        } else {
-            
-        }
+        this.#genero = genero.charAt(0).toUpperCase() + genero.slice(1);
     }
 
     get anio() {
