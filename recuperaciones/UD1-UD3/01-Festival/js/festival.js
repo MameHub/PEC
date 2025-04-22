@@ -64,6 +64,13 @@ export class Festival {
 
     }
 
+    eliminarProduccion(titulo) {
+
+    }
+
+    annadirParticipante() {
+        
+    }
 
     toString() {
         return ``;
