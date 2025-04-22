@@ -2,6 +2,8 @@
  * @author Álvaro Cañas
  */
 
+import Participante from "./participante.js";
+
 export class Festival {
 
     // ATRIBUTOS
@@ -68,8 +70,12 @@ export class Festival {
 
     }
 
-    annadirParticipante() {
-        
+    annadirParticipante(Participante) {
+        if (Participante.instaceof(Jurado)) {
+            this.#aParticipantes.push[1];
+        } else {
+            this.#aParticipantes.push[0];
+        }
     }
 
     toString() {
