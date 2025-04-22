@@ -1,4 +1,4 @@
-import { Participante } from "./participante";
+import { Participante } from "./participante.js";
 
 // 3 Participantes.
 const particinpante1 = new Participante("Manolo", 9);

@@ -1,8 +1,8 @@
 // Importamos las clases.
-import { Personaje } from "./personaje";
-import { Protagonista } from "./protagonista";
-import { Escenario } from "./escenario";
-import { Cuento } from "./cuento";
+import { Personaje } from "./personaje.js";
+import { Protagonista } from "./protagonista.js";
+import { Escenario } from "./escenario.js";
+import { Cuento } from "./cuento.js";
 
 // Creamos y usamos los objetos.
 try {

@@ -1,5 +1,5 @@
 // Importamos el módulo protagonista para el método "anadirPersonaje()".
-import { Protagonista } from "./protagonista";
+import { Protagonista } from "./protagonista.js";
 
 // Creamos la clase "Cuento" de forma que se pueda exportar para utilizar en otro archivo o puedan heredarla.
 export class Cuento {
