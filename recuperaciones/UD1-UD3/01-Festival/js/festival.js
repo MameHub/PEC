@@ -71,8 +71,8 @@ export class Festival {
     }
 
     annadirParticipante(Participante) {
-        if (Participante.instaceof(Jurado)) {
-            this.#aParticipantes.push[1];
+        if (Participante instaceof Jurado) {
+            this.#aParticipantes.push[1].Participante;
         } else {
             this.#aParticipantes.push[0];
         }
