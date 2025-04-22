@@ -22,4 +22,51 @@ export class Festival {
         this.#aParticipantes = [[], []];
     }
 
+    // SETTERS & GETTERS
+    get nombre() {
+        return this.#nombre;
+    }
+
+    set nombre(nombre) {
+        if (nombre.length < 3 || nombre == "") {
+            console.log("El nombre no puede contener menos de 3 caracteres.");
+        } else {
+            this.#nombre = nombre;
+        }
+    }
+
+    get ciudad() {
+        return this.#ciudad;
+    }
+
+    set ciudad(ciudad) {
+        if (ciudad = "") {
+            console.log("El nombre de la ciudad no puede estar en blanco.");
+        } else {
+            this.#ciudad = ciudad;
+        }
+    }
+
+    get edicion() {
+        return this.#edicion;
+    }
+
+    set edicion(edicion) {
+        if (edicion < 0) {
+            console.log("El número de la edición no puede ser negativo.");
+        } else {
+            this.#edicion = edicion;
+        }
+    }
+
+    // Métodos
+    introducirProduccion(Produccion) {
+
+    }
+
+
+    toString() {
+        return ``;
+    }
+
 }
