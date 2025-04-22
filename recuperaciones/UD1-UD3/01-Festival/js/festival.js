@@ -2,7 +2,7 @@
  * @author Álvaro Cañas
  */
 
-import Participante from "./participante.js";
+import Jurado from "./jurado.js";
 
 export class Festival {
 
@@ -71,11 +71,19 @@ export class Festival {
     }
 
     annadirParticipante(participante) {
-        if (participante instaceof Jurado) {
-            this.#aParticipantes.push[1].Participante;
+        if (participante instanceof Jurado) {
+            this.#aParticipantes.push[1].participante;
         } else {
-            this.#aParticipantes.push[0];
+            this.#aParticipantes.push[0].participante;
         }
+    }
+
+    getProducciones() {
+        return this.#aProducciones;
+    }
+    
+    getParticipantes() {
+        return this.#aParticipantes;
     }
 
     toString() {
