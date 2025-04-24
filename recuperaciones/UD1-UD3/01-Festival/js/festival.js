@@ -63,19 +63,22 @@ export class Festival {
 
     // Métodos
     introducirProduccion(produccion) {
-        for (const p of produccion) {
-            if (!this.#aProducciones.includes(p)) {
-                this.#aProducciones.push(p);
-                return true;
-            } else {
-                console.log("La producción introducida ya se encontraba.");
+        for (let p of this.#aProducciones) {
+            if (p.titulo === produccion.titulo) {
+                console.log("La producción introducida ya se encuentra en producciones.");
                 return false;
             }
         }
+        this.#aProducciones.push(produccion);
+        return true;
     }
 
     eliminarProduccion(titulo) {
-
+        for (const iterator of object) {
+            if (condition) {
+                
+            }
+        }
     }
 
     annadirParticipante(participante) {
