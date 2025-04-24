@@ -62,8 +62,16 @@ export class Festival {
     }
 
     // Métodos
-    introducirProduccion(Produccion) {
-        
+    introducirProduccion(produccion) {
+        for (const p of produccion) {
+            if (!this.#aProducciones.includes(p)) {
+                this.#aProducciones.push(p);
+                return true;
+            } else {
+                console.log("La producción introducida ya se encontraba.");
+                return false;
+            }
+        }
     }
 
     eliminarProduccion(titulo) {
