@@ -31,7 +31,7 @@ export class AnimalDomestico extends Animal {
     }
 
     get esCarinnoso() {
-        if (this.#esCarinnoso == true) {
+        if (this.#esCarinnoso === true) {
             return "si";
         } else {
             return "no";
