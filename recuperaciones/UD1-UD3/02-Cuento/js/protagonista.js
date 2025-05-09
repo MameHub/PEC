@@ -1,5 +1,5 @@
 // Importamos la clase "personaje" para extenderla en esta clase.
-import { Personaje } from "./personaje";
+import { Personaje } from "./personaje.js";
 
 // Creamos la clase "Protagonista" de forma que se pueda exportar para utilizar en otro archivo o puedan heredarla.
 export class Protagonista extends Personaje {
