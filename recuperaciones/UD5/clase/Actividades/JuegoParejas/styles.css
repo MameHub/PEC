@@ -1,0 +1,40 @@
+/* Tablero en formato grid */
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 110px);
+    grid-gap: 10px;
+    margin: 20px auto;
+    width: max-content;
+  }
+  
+  /* Estilo de las cartas */
+  .carta {
+    width: 100px;
+    height: 150px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Cartas volteadas */
+  .volteada {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Botones */
+  .botons {
+    display: inline-block;
+    border: 2px solid #f6b103;
+    border-radius: 5px;
+    padding: 10px; 
+    margin: 16px 0;
+    font-size: 16px;
+    box-shadow: 7px 13px 37px #000;
+    cursor: pointer;
+  }
+  
