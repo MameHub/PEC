@@ -7,6 +7,7 @@ function iniciar(){
     document.getElementById("modificarCookie").addEventListener("click",modificarCookie);
     document.getElementById("leerCookie").addEventListener("click",leerCookie);
     document.getElementById("borrarCookie").addEventListener("click",borrarCookie);
+    document.getElementById("almacenarJSON").addEventListener("click",almacenarJSON);
 
 }
 

@@ -2,6 +2,9 @@
 
 function validacionNombre() {
     const nombreCompleto = document.getElementById("nombreCompleto");
+    if (nombreCompleto) {
+        
+    }
     console.log(nombreCompleto);
 }
 
