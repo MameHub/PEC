@@ -1,8 +1,8 @@
 <?php
 // Configuración de la conexión a la base de datos
-$host = "localhost";
+$host = "mysql";
 $user = "root"; 
-$password = "";
+$password = "root";
 $database = "BobEsponjaDB";
 
 $conn = new mysqli($host, $user, $password, $database);
